@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название книги"/>
+
+    <EditText
+        android:id="@+id/editTextAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Автор"/>
+
+    <Spinner
+        android:id="@+id/spinnerGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editTextYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Год выпуска"/>
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Краткое описание"/>
+
+    <ImageView
+        android:id="@+id/imageViewBook"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбрать изображение"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"/>
+
+</LinearLayout>

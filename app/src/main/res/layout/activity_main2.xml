@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBook"
+    android:gravity="center"
+    android:layout_marginHorizontal="15dp">
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название книги"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/editTextAuthor"
+        android:layout_below="@id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Автор"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextYear"
+        android:layout_below="@id/editTextAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Год"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_below="@id/editTextYear"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_below="@id/ivPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Описание"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_below="@id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Удалить"/>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyBook">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:text="Название книги" />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_below="@id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:text="Автор" />
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_below="@id/tvAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:text="Год выпуска" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_below="@id/tvYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:text="Описание" />
+
+    <TextView
+        android:id="@+id/tvGenre"
+        android:layout_below="@id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:text="Жанр" />
+
+    <ImageView
+        android:id="@+id/ivBookImage"
+        android:layout_below="@id/tvGenre"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:padding="16dp" />
+
+</RelativeLayout>
